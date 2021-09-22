@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кот Тот](https://up.htmlacademy.ru/htmlcss/32/user/1650461).
-* Наставник: `[Александр Зиновьев] (https://htmlacademy.ru/profile/id198751).
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
