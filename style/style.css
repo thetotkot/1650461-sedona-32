@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "PT Sans";
     font-weight: 400;
@@ -7,32 +8,55 @@
 }
 
 @font-face {
-font-family: "PT Sans";
-font-weight: 700;
-font-style: normal;
-font-display: swap;
-src: url(../fonts/ptsans-700.woff2);
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/ptsans-700.woff2);
 }
 
 body {
-margin: 0;
-font-family: "PT Sans";
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.advantages-list{
+    text-align: center;
+}
+
+.advantages-list-text-one {
+    text-transform: uppercase;
+}
+
+.recommend-list-text-one {
+    text-transform: uppercase;
 }
 
 .tagline {
-background-image: url(../images/background/index-background.jpg);
-background-repeat: no-repeat;
-
+    background-image: url(../images/background/index-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
 }
 
 .mailing-index {
-background-image: url(../images/background/background-footer.jpg);
-background-repeat: no-repeat;
-width: 1200px;
-height: 411px;
+    background-image: url(../images/background/background-footer.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 411px;
 }
 
 .catalog-products {
     background-image: url(../images/background/catalog-background.jpg);
     background-repeat: no-repeat;
 }
+
