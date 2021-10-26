@@ -24,6 +24,17 @@ body {
   align-content: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .conteiner {
   width: 1200px;
   margin: 0 auto;
@@ -216,13 +227,14 @@ body {
 }
 
 .index-form {
-  width: 600px;
+  width: 800px;
   height: 60px;
-  display: inline-block;
+  display: flex;
+  margin: 0 auto;
 }
 
 .index-input {
-  width: 600px;
+  width: 592px;
   height: 60px;
 
 }
@@ -391,7 +403,7 @@ body {
   margin: 0;
 }
 
-.mailinп-catalog {
+.mailin-catalog {
   text-align: center;
   width: 800px;
   height: 224px;
