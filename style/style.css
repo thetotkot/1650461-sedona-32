@@ -18,6 +18,8 @@ body {
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -101,47 +103,38 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .reccomend-item {
   display: inline-block;
   width: 400px;
-  height: 384px;
   margin: 0;
 }
 
-.blue {
-  width: 400px;
-  height: 384px;
-  color: white;
-  background-color: #81B3D2;
+.advantages-content {
+  box-sizing: border-box;
   text-align: center;
+  padding: 98px 75px 40px 75px;
+  min-height: 384px;
+  width: 400px;
 }
 
-.white {
-  width: 400px;
-  height: 384px;
-  color: black;
-  text-align: center;
-
+.blue {
+  
+  color: white;
+  background-color: #81B3D2;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .middle-blue {
-  width: 400px;
-  height: 384px;
-  color: black;
-  background-color: #83B3D3;
-  text-align: center;
-  
+  background-color:rgba(131, 179, 211, 0.2)
 }
 
 .light-blue {
-  width: 400px;
-  height: 384px;
-  color: black;
-  background-color: #83B3D31F;
-  text-align: center;
   
+  background-color: #83B3D31F;
 }
 
 
@@ -267,11 +260,10 @@ body {
   size: 40px;
   border: 5px solid red;
   text-align: center;
-
-
 }
 
-.footer-logo {}
+
+
 
 .footer-social {
   width: 240px;
@@ -363,8 +355,6 @@ body {
   display: block;
 }
 
-.catalog-filter-group-button {}
-
 .catalog-filter-group {
   margin: 0;
   padding: 0;
@@ -430,11 +420,37 @@ body {
   width: 55px;
   height: 55px;
   color: white;
-
 }
 
 .number-page {
   margin-left: auto;
   border: springgreen 2px solid;
   display: flex;
+}
+
+.advantages-section-text {
+  text-align: center;
+  font-size: 30px;
+  font-family: PT Sans;
+  font-weight: 700;
+  vertical-align: top;
+  font-style: bold;
+  line-height: 36px;
+  line-height: 93%;
+  text-transform: uppercase;
+}
+
+.advantages-section-text-second {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantages-list-text-one,
+.reccomend-item-text-one {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
 }
