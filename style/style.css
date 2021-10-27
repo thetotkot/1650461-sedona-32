@@ -65,6 +65,11 @@ body {
   line-height: 26px;
 }
 
+.navigation-link-want {
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .tagline {
   background-image: url(../images/background/index-background.jpg);
   background-repeat: no-repeat;
@@ -121,7 +126,7 @@ body {
 }
 
 .blue {
-  
+
   color: white;
   background-color: #81B3D2;
   padding-left: 90px;
@@ -129,14 +134,12 @@ body {
 }
 
 .middle-blue {
-  background-color:rgba(131, 179, 211, 0.2)
+  background-color: rgba(131, 179, 211, 0.2)
 }
 
 .light-blue {
-  
   background-color: #83B3D31F;
 }
-
 
 .recommend {
   margin: 0;
@@ -151,7 +154,6 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .advantages-img {
@@ -165,11 +167,9 @@ body {
   display: inline-block;
 }
 
-
 .page-footer {
   display: flex;
 }
-
 
 .search {
   display: flex;
@@ -177,24 +177,24 @@ body {
   text-align: center;
 }
 
-.div-search {}
-
 .text-searh {
   text-transform: uppercase;
-  size: 30px;
+  font-size: 30px;
   font-weight: bold;
+  line-height: 36px;
 }
 
 .text-search-second {
   width: 720px;
-  height: 37px;
-  size: 22px;
+  font-size: 22px;
   text-align: center;
-  margin-left: 240px;
-  margin-right: 240px;
+  margin: 15px auto 73px auto;
+  font-weight: normal;
+  line-height: 26px;
 }
 
 .search-button {
+  font-family: "PT Sans", Arial, sans-serif;
   width: 575px;
   height: 60px;
   background-color: #756257;
@@ -204,23 +204,25 @@ body {
   size: 20px;
 }
 
-
 .mailing-index {
   display: block;
-
-
 }
 
 .text-index {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .text-index-second {
-  size: 22px;
+  font-size: 22px;
+  line-height: 26px;
   color: white;
   text-align: center;
+  font-weight: normal;
 }
 
 .index-form {
@@ -233,7 +235,6 @@ body {
 .index-input {
   width: 592px;
   height: 60px;
-
 }
 
 .index-bottom {
@@ -243,7 +244,8 @@ body {
   height: 61px;
   text-transform: uppercase;
   font-weight: bold;
-
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
 }
 
 .page-footer {
@@ -255,27 +257,23 @@ body {
 }
 
 .footer-phone {
+  font-weight: normal;
   margin: 0 auto;
   width: 720px;
-  size: 40px;
-  border: 5px solid red;
+  font-size: 40px;
+  line-height: 40px;
   text-align: center;
+  text-transform: uppercase;
 }
-
-
-
 
 .footer-social {
   width: 240px;
   margin-right: 72px;
-  border: 5px solid red;
 }
 
 .footer-logo-box {
   width: 200px;
   margin-left: 72px;
-  border: 5px solid red;
-
 }
 
 .product-card-gallery {
@@ -379,10 +377,6 @@ body {
   height: 151px;
 }
 
-.visualli-hidden {
-  margin: 0;
-}
-
 .sorting-product {
   display: flex;
   width: 1057px;
@@ -429,20 +423,15 @@ body {
 }
 
 .advantages-section-text {
-  text-align: center;
   font-size: 30px;
-  font-family: PT Sans;
-  font-weight: 700;
-  vertical-align: top;
-  font-style: bold;
-  line-height: 36px;
-  line-height: 93%;
+  font-weight: bold;
   text-transform: uppercase;
-}
+  line-height: 36px;
+  text-align: center;
+} 
 
 .advantages-section-text-second {
-  font-family: PT Sans;
-  font-style: normal;
+  font-weight: normal;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
@@ -450,7 +439,18 @@ body {
 
 .advantages-list-text-one,
 .reccomend-item-text-one {
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 28px;
   text-transform: uppercase;
   font-size: 24px;
+}
+
+.advantages-list-text {
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.reccomend-item-text-second {
+  font-weight: normal;
+  line-height: 21px;
 }
