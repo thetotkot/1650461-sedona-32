@@ -132,6 +132,7 @@ body {
   color: black;
   background-color: #83B3D3;
   text-align: center;
+  
 }
 
 .light-blue {
@@ -140,6 +141,7 @@ body {
   color: black;
   background-color: #83B3D31F;
   text-align: center;
+  
 }
 
 
@@ -154,6 +156,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 
 }
 
