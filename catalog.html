@@ -36,20 +36,20 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visualli-hidden">
+              <span class="visually-hidden">
                 поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visualli-hidden">
+              <span class="visually-hidden">
                 избранное
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-want" href="#">хочу сюда</a>
+            <a class="button button-dark button-want" href="#">хочу сюда</a>
           </li>
         </ul>
         <!-- /navigation-list -->
@@ -70,7 +70,7 @@
             <a class="home-page" href="#"><img src="images/icons/home.svg" alt="иконка домика" width="12"
                 height="12"></a>
             <img src="images/icons/Vector.svg" alt="вектор" width="5px" height="8px">
-            <span>Гостиницы</span>
+            <span class="main-catalog-text-small">Гостиницы</span>
           </div>
           <!-- /catalog-menu -->
 
@@ -127,7 +127,7 @@
 
             <!-- catalog-filter-group -->
             <fieldset class="catalog-filter-group prise-filter">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-title">Стоимость, &#8381:</legend>
 
               <label class="catalog-filter-label">от
                 <input class="catalog-filter-input" type="number" name="min-price">
@@ -146,8 +146,8 @@
             <!-- catalog-filter-group -->
 
             <div class="catalog-filter-group-button">
-              <button type="submit'">применить</button>
-              <button type="reset">сбросить</button>
+              <button class="button button-filter" type="submit'">применить</button>
+              <button class="button-reset" type="reset">сбросить</button>
             </div>
 
           </form>
@@ -163,9 +163,9 @@
           <p class="sorting-product-text">Найдено гостиниц: 38</p>
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" name="sorting" id="sorting">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярное</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option class="select-control-choice" value="cheap">Сначала дешёвые</option>
+            <option class="select-control-choice" value="popular">Сначала популярное</option>
+            <option class="select-control-choice" value="expensive">Сначала дорогое</option>
           </select>
 
           <a href="#" class="button-small"><span class="visually-hidden">показать мелкие значки</span></a>
@@ -185,14 +185,14 @@
                 height="120">
             </a>
             <h3 class="product-card-title">Amara Resort & Spa</h3>
-            <p>Гостиница</p>
+            <p class="product-card-title-type">Гостиница</p>
             <div class="product-card-price">
               от 4000 р
             </div>
             <!-- откуда? -->
             <div class="product-card-details">
-              <a href="#" class="product-card-button">Подробнее</a>
-              <a href="#" class="product-card-button">В избранное</a>
+              <a href="#" class="button button-dark">Подробнее</a>
+              <a href="#" class="button">В избранное</a>
             </div>
             <!-- </div> -->
             <!-- откуда? -->
@@ -210,17 +210,17 @@
             </a>
             <h3 class="product-card-title">Desert Quail Inn</h3>
 
-            <p>Мотель</p>
+            <p class="product-card-title-type">Мотель</p>
             <div class="product-card-price">
               от 3000 р
             </div>
-            <!-- откуда? -->
+
             <div class="product-card-details">
-              <a href="#" class="product-card-button">Подробнее</a>
-              <a href="#" class="product-card-button">В избранное</a>
+              <a href="#" class="button button-dark">Подробнее</a>
+              <a href="#" class="button">В избранное</a>
             </div>
             <!-- </div> -->
-            <!-- откуда? -->
+
 
             <p>рейтинг 8,9</p>
 
@@ -232,14 +232,14 @@
                 width="180" height="120">
             </a>
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
-            <p>Апартаменты</p>
+            <p class="product-card-title-type">Апартаменты</p>
             <div class="product-card-price">
               от 2000 р
             </div>
-            <!-- откуда? -->
+
             <div class="product-card-details">
-              <a href="#" class="product-card-button">Подробнее</a>
-              <a href="#" class="product-card-button">В избранное</a>
+              <a href="#" class="button button-dark">Подробнее</a>
+              <a href="#" class="button button-favorite">В избранном</a>
             </div>
 
             <p>рейтинг 9,2</p>
@@ -253,13 +253,13 @@
             </a>
             <h3 class="product-card-title">GreenTree Inn</h3>
 
-            <p>Гостиница</p>
+            <p class="product-card-title-type">Гостиница</p>
             <div class="product-card-price">
               от 3000 р
             </div>
             <div class="product-card-details">
-              <a href="#" class="product-card-button">Подробнее</a>
-              <a href="#" class="product-card-button">В избранное</a>
+              <a href="#" class="button button-dark">Подробнее</a>
+              <a href="#" class="button">В избранное</a>
             </div>
 
 
@@ -270,44 +270,45 @@
         </ul>
         <!-- /product-card-gallery -->
 
-        <button class="product-card-details-loading">Загрузить ещё</button>
+        <button class="button button-loading">Загрузить ещё</button>
       </section>
       <!-- /product -->
 
-      </section>
+      <div class="pagination-wrap">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="button button-number button-active" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="button button-number" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="button button-number" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="button button-number" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="button button-number" href="">...</a>
+            <span class="visually-hidden">Следующая страница</span>
+          </li>
+          <li class="pagination-item">
+            <a class="button button-number" href="#">10</a>
+          </li>
+        </ul>
 
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current" href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link-next" href="">...</a>
-          <span class="visually-hidden">Следующая страница</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
-
-      <div class="number-page">
-        <p>Гостиниц на странице</p>
-        <select name="number">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+        <div class="number-page">
+          <p>Гостиниц на странице</p>
+          <select name="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
       </div>
 
+      </section>
 
       <section class="mailin-catalog">
         <h2>Подпишитесь на рассылку</h2>
@@ -316,7 +317,7 @@
 
         <form action="#" method="post">
           <input type="email" name="email" placeholder="Ваш e-mail">
-          <button type="submit">подписаться</button>
+          <button class="button button-submit" type="submit">подписаться</button>
         </form>
       </section>
     </main>

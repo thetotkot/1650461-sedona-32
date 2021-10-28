@@ -42,6 +42,104 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  display: inline-block;
+  background-color: #83b3d3;
+  border-radius: 4px;
+  border: none;
+  width: 160px;
+  padding: 9px 0 10px 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-dark {
+  background-color: #756257;
+  width: 151px;
+}
+
+.button-want {
+  width: 160px;
+
+}
+
+.button-filter {
+  padding: 14px 0 14px 0;
+
+}
+
+.button-search {
+  width: 575px;
+  padding: 12px 0 12px 0;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-favorite {
+  background-color: #7db54f;
+}
+
+.button-loading {
+  width: 625px;
+  padding: 14px 0 14px 0;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.pagination-item {
+  margin: 0 4px;
+}
+
+
+.button-number {
+  width: 55px;
+  padding: 14px 0 14px 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-active {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+
+
+.button-submit {
+  width: 200px;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 17px 0 17px 0;
+}
+
+.button-number-text {
+  color: #FFFFFF;
+}
+
+.pagination-wrap {
+  display: flex;
+
+}
+
+.index-bottom {
+  width: 200px;
+  padding: 17px 0 17px 0;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
 .header-logo {
   margin: 0 auto;
 }
@@ -54,20 +152,15 @@ body {
   text-align: right;
 }
 
+.navigation-link {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+}
+
 .main-contaner {
   flex-grow: 1;
-}
-
-.navigation-link {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  line-height: 26px;
-}
-
-.navigation-link-want {
-  font-size: 16px;
-  line-height: 21px;
 }
 
 .tagline {
@@ -126,7 +219,6 @@ body {
 }
 
 .blue {
-
   color: white;
   background-color: #81B3D2;
   padding-left: 90px;
@@ -177,7 +269,7 @@ body {
   text-align: center;
 }
 
-.text-searh {
+.text-searсh {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
@@ -193,16 +285,6 @@ body {
   line-height: 26px;
 }
 
-.search-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  width: 575px;
-  height: 60px;
-  background-color: #756257;
-  border-radius: 10px;
-  text-transform: uppercase;
-  color: white;
-  size: 20px;
-}
 
 .mailing-index {
   display: block;
@@ -235,17 +317,6 @@ body {
 .index-input {
   width: 592px;
   height: 60px;
-}
-
-.index-bottom {
-  color: white;
-  background-color: #83b3d3;
-  width: 200px;
-  height: 61px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
 }
 
 .page-footer {
@@ -303,29 +374,43 @@ body {
 
 .product-card-price {
   border: black solid 2px;
+  font-weight: normal;
+  line-height: 23px;
 }
 
 .product-card-details {
   border: orange solid 2px;
 }
 
-.product-card-details-loading {
-  background-color: #83b3d3;
-  border-radius: 4px;
-  color: white;
-  width: 625px;
-  height: 55px;
-  margin: 0 auto;
-  display: block;
+.product-card-button-favorite {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #83b3d3;
+  box-sizing: 4px;
 }
 
 .main-catalog-text {
   font-size: 60px;
+  line-height: 78px;
   font-weight: bold;
   color: #ffffff;
   margin: 0;
+}
+
+.main-catalog-text-small {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .home-page {
@@ -351,6 +436,8 @@ body {
 
 .control {
   display: block;
+  font-weight: normal;
+  line-height: 23px;
 }
 
 .catalog-filter-group {
@@ -388,7 +475,28 @@ body {
 .sorting-product-text {
   font-size: 30px;
   font-weight: bold;
+  line-height: 39px;
+  text-transform: uppercase;
   margin: 0;
+}
+
+.select-control-choice {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.product-card-title-type {
+  font-weight: normal;
+  line-height: 23px;
 }
 
 .mailin-catalog {
@@ -407,15 +515,6 @@ body {
   border: olive 2px solid;
 }
 
-.pagination-item {
-  margin: 2px;
-  background-color: #83B3D3;
-  border-radius: 4px;
-  width: 55px;
-  height: 55px;
-  color: white;
-}
-
 .number-page {
   margin-left: auto;
   border: springgreen 2px solid;
@@ -428,7 +527,7 @@ body {
   text-transform: uppercase;
   line-height: 36px;
   text-align: center;
-} 
+}
 
 .advantages-section-text-second {
   font-weight: normal;
