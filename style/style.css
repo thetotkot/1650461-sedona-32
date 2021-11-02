@@ -166,23 +166,23 @@ body {
 .tagline {
   background-image: url(../images/background/index-background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
+  min-height: 485px;
   text-align: center;
 }
 
 .mailing-index {
   background-image: url(../images/background/background-footer.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 411px;
+  min-height: 411px;
 }
 
 .catalog-products {
+  background-color: #60575a;
   background-image: url(../images/background/catalog-background.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 408px;
+  min-height: 408px;
+  color: white;
 }
 
 .navigation {
@@ -309,14 +309,14 @@ body {
 
 .index-form {
   width: 800px;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   margin: 0 auto;
 }
 
 .index-input {
   width: 592px;
-  height: 60px;
+  min-height: 60px;
 }
 
 .page-footer {
@@ -422,16 +422,12 @@ body {
   display: flex;
   border: violet 2px solid;
   width: 111px;
-  height: 21px;
+  min-height: 21px;
 }
 
 .catalog-filter {
   display: flex;
   justify-content: space-around;
-}
-
-.catalog-header {
-  color: white;
 }
 
 .control {
@@ -449,25 +445,25 @@ body {
 .catalog-filter-group,
 .prise-filter {
   width: 287px;
-  height: 148px;
+  min-height: 148px;
 }
 
 .catalog-filter-group,
 .infrastructure {
   width: 150px;
-  height: 151px;
+  min-height: 151px;
 }
 
 .catalog-filter-group,
 .type-house {
   width: 145px;
-  height: 151px;
+  min-height: 151px;
 }
 
 .sorting-product {
   display: flex;
   width: 1057px;
-  height: 48px;
+  min-height: 48px;
   margin-left: 71px;
   margin-right: 72px;
 }
@@ -502,7 +498,7 @@ body {
 .mailin-catalog {
   text-align: center;
   width: 800px;
-  height: 224px;
+  min-height: 224px;
   border: yellowgreen solid 2px;
   margin: 0 auto;
 }

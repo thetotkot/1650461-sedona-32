@@ -60,11 +60,15 @@
 
     <!--main-catalog-->
     <main class="main-catalog">
-      <!-- catalog-products -->
-      <div class="catalog-products">
-        <header class="catalog-header">
+
+      <!-- product -->
+      <section class="product">
+
+        <!-- catalog-header -->
+        <header class="catalog-products">
           <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
           <p class="main-catalog-text">Гостиницы Седоны</p>
+
           <!-- catalog-menu -->
           <div class="catalog-menu">
             <a class="home-page" href="#"><img src="images/icons/home.svg" alt="иконка домика" width="12"
@@ -75,6 +79,8 @@
           <!-- /catalog-menu -->
 
           <h2 class="visually-hidden">Поиск по параметрам</h2>
+
+          <!-- catalog-filter -->
           <form class="catalog-filter" action="">
             <!-- catalog-filter-group -->
             <fieldset class="catalog-filter-group infrastructure">
@@ -99,7 +105,7 @@
               </label>
 
             </fieldset>
-            <!-- catalog-filter-group -->
+            <!-- /catalog-filter-group -->
 
             <!-- catalog-filter-group -->
             <fieldset class="catalog-filter-group type-house">
@@ -123,7 +129,7 @@
                 <span class="control label">Апартаменты</span>
               </label>
             </fieldset>
-            <!-- catalog-filter-group -->
+            <!-- /catalog-filter-group -->
 
             <!-- catalog-filter-group -->
             <fieldset class="catalog-filter-group prise-filter">
@@ -143,7 +149,7 @@
                   цену</span></button>
 
             </fieldset>
-            <!-- catalog-filter-group -->
+            <!-- /catalog-filter-group -->
 
             <div class="catalog-filter-group-button">
               <button class="button button-filter" type="submit'">применить</button>
@@ -151,14 +157,12 @@
             </div>
 
           </form>
+          <!-- /catalog-filter -->
         </header>
-      </div>
-      <!-- /catalog-products -->
+        <!-- /catalog-header -->
 
-      <!-- product -->
-      <section class="product">
         <!-- sorting-product -->
-        <div class="sorting-product">
+         <div class="sorting-product">
 
           <p class="sorting-product-text">Найдено гостиниц: 38</p>
           <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -189,20 +193,17 @@
             <div class="product-card-price">
               от 4000 р
             </div>
-            <!-- откуда? -->
             <div class="product-card-details">
               <a href="#" class="button button-dark">Подробнее</a>
               <a href="#" class="button">В избранное</a>
             </div>
-            <!-- </div> -->
-            <!-- откуда? -->
-
 
             <p>рейтинг 8,5</p>
 
           </li>
           <!-- /product-card -->
 
+          <!-- product-card" -->
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-2.jpg" alt="мотель Desert на фоне гор"
@@ -219,13 +220,12 @@
               <a href="#" class="button button-dark">Подробнее</a>
               <a href="#" class="button">В избранное</a>
             </div>
-            <!-- </div> -->
-
-
             <p>рейтинг 8,9</p>
 
           </li>
+          <!-- /product-card" -->
 
+          <!-- product-card -->
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-3.jpg" alt="вид из окна апартаментов Villas"
@@ -245,7 +245,9 @@
             <p>рейтинг 9,2</p>
 
           </li>
+          <!-- /product-card -->
 
+          <!-- product-card -->
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-4.jpg"
@@ -266,50 +268,56 @@
             <p>рейтинг 9,2</p>
 
           </li>
-
+          <!-- /product-card -->
         </ul>
         <!-- /product-card-gallery -->
 
         <button class="button button-loading">Загрузить ещё</button>
+
+
+        <!-- pagination-wrap -->
+        <div class="pagination-wrap">
+          <!-- pagination -->
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="button button-number button-active" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-number" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-number" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-number" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-number" href="">...</a>
+              <span class="visually-hidden">Следующая страница</span>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-number" href="#">10</a>
+            </li>
+          </ul>
+          <!-- /pagination -->
+
+          <!-- number-page -->
+          <div class="number-page">
+            <p>Гостиниц на странице</p>
+            <select name="number">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <!-- /number-page -->
+        </div>
+        <!-- /pagination-wrap -->
       </section>
       <!-- /product -->
 
-      <div class="pagination-wrap">
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="button button-number button-active" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-number" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-number" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-number" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-number" href="">...</a>
-            <span class="visually-hidden">Следующая страница</span>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-number" href="#">10</a>
-          </li>
-        </ul>
-
-        <div class="number-page">
-          <p>Гостиниц на странице</p>
-          <select name="number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-      </div>
-
-      </section>
-
+      <!-- mailin-catalog -->
       <section class="mailin-catalog">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,
@@ -320,6 +328,7 @@
           <button class="button button-submit" type="submit">подписаться</button>
         </form>
       </section>
+      <!-- /mailin-catalog -->
     </main>
     <!--/main-catalog-->
 
