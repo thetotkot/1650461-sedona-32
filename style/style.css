@@ -409,6 +409,10 @@ background-color: #68A2CA;
   display: inline-block;
 }
 
+.footer-social-item:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
 .footer-phone {
   display: block;
   padding: 15px;
@@ -448,20 +452,21 @@ height: 15px;
 fill: #83B3D3;
 }
 
-.social-item-logo svg:hover {
+.social-item-logo:hover svg {
   fill: #68A2CA;
 }
 
-.social-item-logo svg:active {
+.social-item-logo:active svg {
   fill: rgba(104,162,202, 0.29);
 }
 
-.social-item-logo svg:focus-visible {
-  fill: #68A2CA;
+.social-item-logo:focus-visible {
   outline: 3px solid #83B3D3;
-  border-radius: 10px;
 }
 
+.social-item-logo:focus-visible svg {
+  fill: #68A2CA;
+}
 
 .footer-logo-box {
   width: 200px;
