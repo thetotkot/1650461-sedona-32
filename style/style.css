@@ -59,19 +59,42 @@ body {
   color: #FFFFFF;
 }
 
+.button:hover {
+background-color: #68A2CA;
+}
+
+.button:focus-visible {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+  outline-offset: -1px;
+}
+
 .button-dark {
   background-color: #756257;
   width: 151px;
 }
 
+.button-dark:hover {
+  background-color: #615048;
+}
+
+.button-dark:focus-visible {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+  outline-offset: -1px;
+}
+
+
+.button-dark:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-want {
   width: 160px;
-
 }
 
 .button-filter {
   padding: 14px 0 14px 0;
-
 }
 
 .button-search {
@@ -154,21 +177,33 @@ body {
 }
 
 .navigation-user {
+  justify-content: flex-end;
   text-align: right;
 }
 
 .navigation-link {
-  text-decoration: none;
   display: block;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding: 6px 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   color: black;
+  text-decoration: none;
+  min-height: 16px;
+}
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:focus-visible {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.navigation-link:active {
+  border-bottom: 2px solid #756257;
 }
 
 .main-contaner {
@@ -208,12 +243,15 @@ body {
 }
 
 .navigation-item {
-  display: inline-block;
+  padding: 12px 9px 9px 0;
+
 }
 
 .navigation-list {
+  display: flex;
   margin: 0 0 0 -16px;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-list {
@@ -235,21 +273,12 @@ body {
   grid-column: 1/3;
   margin-top: 28px;
   margin-bottom: 1px;
-  /* растянуть на две колонки */
 }
 
 .button,
 .product-card-price {
-  grid-column: 2/3;
   font-weight: normal;
   line-height: 23px;
-  margin-bottom: 31px;
-}
-
-.button-dark,
-.product-card-title-type {
-  grid-column: 1/2;
-  margin: 1px 8px 31px 0;
 }
 
 .product-rating {
@@ -387,6 +416,21 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  color: black;
+}
+
+.footer-phone:hover {
+color: #756257;
+}
+
+.footer-phone:focus-visible {
+  outline: 3px solid #83B3D3;
+  color: #756257;
+  border-radius: 10px;
+}
+
+.footer-phone:active {
+color: rgba(117, 98, 87, 0.3)
 }
 
 .footer-social {
@@ -405,7 +449,8 @@ body {
 
 .product-card {
   display: flex;
-  border: tomato solid 2px;
+  padding-bottom: 31px;
+  border: orange 1px solid;
 }
 
 .product-card-image {
