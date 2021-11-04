@@ -402,6 +402,7 @@ background-color: #68A2CA;
 
 .page-footer {
   display: flex;
+  align-items: center;
 }
 
 .footer-social-item {
@@ -409,14 +410,16 @@ background-color: #68A2CA;
 }
 
 .footer-phone {
+  display: block;
+  padding: 15px;
   font-weight: normal;
   margin: 0 auto;
-  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: black;
+  text-decoration: none;
 }
 
 .footer-phone:hover {
@@ -437,6 +440,28 @@ color: rgba(117, 98, 87, 0.3)
   width: 240px;
   margin-right: 72px;
 }
+
+.social-item-logo svg {
+display: block;
+width: 18px;
+height: 15px;
+fill: #83B3D3;
+}
+
+.social-item-logo svg:hover {
+  fill: #68A2CA;
+}
+
+.social-item-logo svg:active {
+  fill: rgba(104,162,202, 0.29);
+}
+
+.social-item-logo svg:focus-visible {
+  fill: #68A2CA;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
 
 .footer-logo-box {
   width: 200px;
