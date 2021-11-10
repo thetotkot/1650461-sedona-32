@@ -251,10 +251,11 @@ body {
 .tagline {
   padding: 51px 51px 82px;
   box-sizing: border-box;
-  background-image: url(../images/background/index-background.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/divider.svg), url(../images/background/index-background.jpg);
+  background-repeat: no-repeat, no-repeat;
   background-color: #4b7195;
-  background-size: cover;
+  background-size: 1202px 57px, cover;
+  background-position: center bottom, center top;
   min-height: 485px;
   text-align: center;
 }
@@ -430,6 +431,7 @@ body {
   font-size: 30px;
   line-height: 36px;
 }
+
 
 .text-index-second {
   font-size: 22px;
@@ -684,7 +686,6 @@ body {
   color: #756257;
   outline: 3px solid #83B3D3;
   border-radius: 10px;
-
 }
 
 .product-card-title-type {
