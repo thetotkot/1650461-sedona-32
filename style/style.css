@@ -15,14 +15,14 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   align-content: center;
 }
 
@@ -43,12 +43,12 @@ body {
 }
 
 .button {
-  display: inline-block;
-  background-color: #83b3d3;
-  border-radius: 4px;
-  border: none;
   width: 160px;
   padding: 9px 0 10px 0;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  background-color: #83b3d3;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -75,8 +75,8 @@ body {
 }
 
 .button-dark {
-  background-color: #756257;
   width: 151px;
+  background-color: #756257;
 }
 
 .button-dark:hover {
@@ -108,7 +108,7 @@ body {
 .button-filter {
   padding: 14px 0 14px 0;
   margin-bottom: 20px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .button-search {
@@ -121,12 +121,12 @@ body {
 
 .button-reset {
   padding: 14px 0 14px 0;
+  border: none;
   background-color: transparent;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
-  border: none;
 }
 
 .button-favorite {
@@ -160,7 +160,6 @@ body {
   margin: 0 4px;
 }
 
-
 .button-number {
   width: 55px;
   padding: 14px 0 14px 0;
@@ -179,7 +178,192 @@ body {
 
 .pagination-wrap {
   display: flex;
+}
 
+.modal-close {
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  margin-left: auto;
+  border: 0;
+  border-radius: 50px;
+  background-image: url(../images/icons/cross.svg);
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+  background-position: center;
+}
+
+.form-people {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 
+.change-people {
+
+} */
+
+.registration-people::-webkit-outer-spin-button,
+.registration-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.registration-people[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.wrap-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.form-registration {
+  width: 715px;
+  margin: auto;
+  padding: 54px 70px 70px 70px;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+}
+
+.popup-header {
+  margin-bottom: 54px;
+  display: flex;
+}
+
+.popup-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.form-label {
+  width: 155px;
+  display: block;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.form-label-children {
+  width: 54px;
+}
+
+.registration {
+  width: 420px;
+  padding: 5px 50px 5px 19px;
+  border: 0;
+  border-radius: 4px;
+  background: #F2F2F2;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.registration-people {
+  width: 133px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.remove-people {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-image: url(../images/icons/remowe-people.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.people-note {
+  width: 25px;
+  height: 25px;
+  margin-right: 18px;
+  padding: 0;
+  border: 0;
+  background-image: url(../images/icons/Ellipse\ 3.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: white;
+}
+
+.children {
+  margin-left: 126px;
+}
+
+.add-people {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url(../images/icons/add-people.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-form-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.popup-notes {
+  width: 420px;
+  margin: 0 0 0 auto;
+  color: #333333;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.popup-error {
+  color: #ff5757;
+}
+
+.calendar {
+  position: relative;
+}
+
+.button-data {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-image: url(../images/icons/date.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.registration-note {
+  width: 256px;
+  height: 143px;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 .index-bottom {
@@ -191,6 +375,11 @@ body {
   line-height: 26px;
 }
 
+.popup-button {
+  width: 575px;
+  height: 60px;
+  border-radius: 10px;
+}
 
 .header-logo {
   margin: 0 auto;
@@ -211,14 +400,14 @@ body {
 }
 
 .navigation-link {
-  display: block;
+  min-height: 16px;
   padding: 6px 12px;
+  display: block;
+  color: black;
+  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  color: black;
-  text-decoration: none;
-  min-height: 16px;
 }
 
 .navigation-link:hover {
@@ -226,9 +415,9 @@ body {
 }
 
 .navigation-link:focus-visible {
-  color: #756257;
-  outline: 3px solid #83B3D3;
   border-radius: 10px;
+  outline: 3px solid #83B3D3;
+  color: #756257;
 }
 
 .navigation-link:active {
@@ -240,6 +429,7 @@ body {
 }
 
 .tagline {
+  min-height: 485px;
   padding: 51px 51px 82px;
   box-sizing: border-box;
   background-image: url(../images/divider.svg), url(../images/background/index-background.jpg);
@@ -247,34 +437,32 @@ body {
   background-color: #4b7195;
   background-size: 1202px 57px, cover;
   background-position: center bottom, center top;
-  min-height: 485px;
   text-align: center;
 }
 
 .catalog-products {
+  min-height: 408px;
   background-color: #60575a;
   background-image: url(../images/background/catalog-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 408px;
   color: white;
 }
 
 .navigation {
-  display: flex;
   padding-left: 72px;
   padding-right: 72px;
+  display: flex;
 }
 
 .navigation-item {
   padding: 12px 9px 9px 0;
-
 }
 
 .navigation-list {
-  display: flex;
   margin: 0 0 0 -16px;
   padding: 0;
+  display: flex;
   list-style-type: none;
 }
 
@@ -314,8 +502,8 @@ body {
 .product-rating {
   margin: auto 0 0 auto;
   padding: 10px 29px;
-  background: #F2F2F2;
   border-radius: 4px;
+  background: #F2F2F2;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -323,24 +511,24 @@ body {
 }
 
 .reccomend-item {
-  display: inline-block;
   width: 400px;
   margin: 0;
+  display: inline-block;
 }
 
 .advantages-content {
+  width: 400px;
+  min-height: 384px;
+  padding: 98px 75px 40px 75px;
   box-sizing: border-box;
   text-align: center;
-  padding: 98px 75px 40px 75px;
-  min-height: 384px;
-  width: 400px;
 }
 
 .blue {
-  color: white;
-  background-color: #81B3D2;
-  padding-left: 90px;
   padding-right: 90px;
+  padding-left: 90px;
+  background-color: #81B3D2;
+  color: white;
 }
 
 .middle-blue {
@@ -354,22 +542,22 @@ body {
 .recommend {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
 .advantages {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .advantages-img {
-  display: inline-block;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .page-footer {
@@ -392,9 +580,9 @@ body {
 
 .text-search-second {
   width: 720px;
+  margin: 0 auto 73px auto;
   font-size: 22px;
   text-align: center;
-  margin: 0 auto 73px auto;
   font-weight: normal;
   line-height: 26px;
 }
@@ -414,9 +602,9 @@ body {
   margin-top: 0;
   margin-bottom: 26px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
   text-align: center;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -426,9 +614,9 @@ body {
 
 .index-form {
   width: 800px;
+  margin: 0 auto;
   min-height: 60px;
   display: flex;
-  margin: 0 auto;
 }
 
 .index-input {
@@ -446,21 +634,21 @@ body {
 }
 
 .footer-social-item:focus-visible {
-  outline: 3px solid #83B3D3;
   border-radius: 10px;
+  outline: 3px solid #83B3D3;
 }
 
 .footer-phone {
-  display: block;
-  padding: 15px;
-  font-weight: normal;
   margin: 0 auto;
+  padding: 15px;
+  display: block;
+  font-weight: normal;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
 .footer-phone:hover {
@@ -468,9 +656,9 @@ body {
 }
 
 .footer-phone:focus-visible {
+  border-radius: 10px;
   outline: 3px solid #83B3D3;
   color: #756257;
-  border-radius: 10px;
 }
 
 .footer-phone:active {
@@ -487,10 +675,10 @@ body {
 }
 
 .social-item-logo svg {
-  display: block;
-  margin: 12px 10px 12px 10px;
   width: 18px;
   height: 15px;
+  margin: 12px 10px 12px 10px;
+  display: block;
   fill: #83B3D3;
 }
 
@@ -502,13 +690,9 @@ body {
   fill: rgba(104, 162, 202, 0.29);
 }
 
-.social-item-logo:focus-visible {}
-
 .social-item-logo:focus-visible svg {
   fill: #68A2CA;
 }
-
-
 
 .footer-logo-box {
   width: 200px;
@@ -520,10 +704,10 @@ body {
 }
 
 .product-card {
-  display: flex;
-  align-items: flex-start;
   padding: 31px 0 30px 0;
+  display: flex;
   border: orange 1px solid;
+  align-items: flex-start;
 }
 
 .product-card-image {
@@ -531,34 +715,34 @@ body {
 }
 
 .product-card-hotel {
+  margin-left: 37px;
   display: block;
   border: rgb(37, 218, 52) solid 2px;
-  margin-left: 37px;
 }
 
 .product-card-star {
-  border: steelblue solid 2px;
   margin-left: auto;
   margin-right: 72px;
+  border: steelblue solid 2px;
 }
 
 .product-card-button-favorite {
-  color: #FFFFFF;
+  box-sizing: 4px;
+  background-color: #83b3d3;
   font-weight: bold;
   font-size: 16px;
-  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #83b3d3;
-  box-sizing: 4px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
 
 .main-catalog-text {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: bold;
-  color: #ffffff;
   margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 78px;
+  color: #ffffff;
 }
 
 .main-catalog-text-small {
@@ -578,10 +762,10 @@ body {
 }
 
 .catalog-menu {
-  display: flex;
-  border: violet 2px solid;
   width: 111px;
   min-height: 21px;
+  display: flex;
+  border: violet 2px solid;
 }
 
 .catalog-filter {
@@ -626,34 +810,34 @@ body {
 }
 
 .sorting-product {
-  display: flex;
   width: 1057px;
   min-height: 48px;
   margin-left: 71px;
   margin-right: 72px;
+  display: flex;
 }
 
 .sorting-product-text {
+  margin: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 39px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .select-control-choice {
   font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 23px;
   color: #333333;
 }
 
 .product-card-title {
+  margin-top: -4px;
   font-size: 24px;
   line-height: 31px;
-  margin-top: -4px;
 }
 
 .product-card-title:hover {
@@ -665,21 +849,21 @@ body {
 }
 
 .product-card-title:focus-visible {
-  color: #756257;
-  outline: 3px solid #83B3D3;
   border-radius: 10px;
+  outline: 3px solid #83B3D3;
+  color: #756257;
 }
 
 .product-card-title-type {
+  margin: 0 0 31px 0;
   font-weight: normal;
   line-height: 23px;
-  margin: 0 0 31px 0;
 }
 
 .mailing-index {
-  background-repeat: no-repeat;
   padding-top: 94px;
   padding-bottom: 93px;
+  background-repeat: no-repeat;
 }
 
 .mailing-index-bg {
@@ -688,47 +872,47 @@ body {
 }
 
 .mailin-catalog {
-  display: block;
-  text-align: center;
-  border: yellowgreen solid 2px;
   margin: 0 auto;
+  display: block;
+  border: yellowgreen solid 2px;
+  text-align: center;
 }
 
 .pagination {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   border: olive 2px solid;
+  list-style: none;
 }
 
 .number-page {
   margin-left: auto;
-  border: springgreen 2px solid;
   display: flex;
+  border: springgreen 2px solid;
 }
 
 .advantages-section-text {
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .advantages-section-text-second {
-  font-weight: normal;
   font-size: 22px;
+  font-weight: normal;
   line-height: 36px;
   text-align: center;
 }
 
 .advantages-list-text-one,
 .reccomend-item-text-one {
+  font-size: 24px;
   font-weight: bold;
   line-height: 28px;
   text-transform: uppercase;
-  font-size: 24px;
 }
 
 .advantages-list-text {
