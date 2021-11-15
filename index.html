@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-favorites" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -57,6 +57,32 @@
                 избранное
               </span>
             </a>
+            <div class="favorites">
+              <ul class="favorites-list">
+                <li class="favorites-item">
+                  <a class="favorites-item-link" href="">
+                    <img class="favorites-item-img" src="images/hotel-2-small.jpg" alt="миниатюрное изображение мотеля Desert на фоне гор">
+                  </a>
+                  <div class="favorites-item-info">
+                    <h3 class="favorites-item-title">Desert Quail Inn</h3>
+                    <p class="favorites-item-type">Мотель</p>
+                  </div>
+                  <span class="delete-favorites"></span>
+                </li>
+                <li class="favorites-item">
+                  <a class="favorites-item-link" href="">
+                    <img class="favorites-item-img" src="images/hotel-3-small.jpg" alt="миниатюрное изображение видa из окна апартаментов Villas">
+                  </a>
+                  <div class="favorites-item-info">
+                    <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
+                    <p class="favorites-item-type">Апартаменты</p>
+                  </div>
+                  <span class="delete-favorites"></span>
+                </li>
+              </ul>
+              <button class="button button-dark favorites-button" type="button">все избранные</button>
+            </div>
+
           </li>
           <li class="navigation-item">
             <a class="button button-dark button-want" href="#">хочу сюда</a>
@@ -66,6 +92,18 @@
       </nav>
     </header>
     <!--/index-header-->
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--main-index-->
     <main class="main-index main-contaner">
@@ -171,7 +209,9 @@
       </section>
       <!-- /search -->
 
+      <!-- wrap-popup -->
       <div class="wrap-popup">
+        <!-- wrap-popup-visible открывает модальное окно -->
         <div class="form-registration">
           <div class="popup-header">
             <h2 class="popup-title">поиск гостиницы в седоне</h2>
@@ -186,7 +226,7 @@
               </span>
               <p class=" popup-notes popup-error">Мы не можем отправить вас в прошлое</p>
             </label>
-            
+
             <label class="popup-form-item">
               <span class="form-label">Дата выезда:</span>
               <span class="calendar">
@@ -197,37 +237,35 @@
               <p class="popup-notes">На эти даты есть свободные номера. Пока есть.</p>
             </label>
             <div class="form-people">
-            <label class="popup-form-item">
-              <span class="form-label">Взрослые:</span>
-              <span class="calendar">
-              <button class="change-people remove-people"></button>
-              <input class="registration registration-people" type="number" name="" value="2" min="0">
-              <button class="change-people add-people"></button>
-              </span>
-            </label>
-            <label class="popup-form-item children">
-              <span class="form-label form-label-children">Дети:</span>
-              <button class="people-note">i</button>
-              <span class="calendar">
-                <button class="change-people remove-people"></button>
-              <input class="registration registration-people" type="number" name="" value="1" min="0">
-              <button class="change-people add-people"></button>
-              </span>
-            </label>
+              <label class="popup-form-item">
+                <span class="form-label">Взрослые:</span>
+                <span class="calendar">
+                  <button class="change-people remove-people"></button>
+                  <input class="registration registration-people" type="number" name="" value="2" min="0">
+                  <button class="change-people add-people"></button>
+                </span>
+              </label>
+              <label class="popup-form-item children">
+                <span class="form-label form-label-children">Дети:</span>
+                <span class="wrap-note">
+                  <button class="people-note" type="button"></button>
+                  <span class="registration-note">Укажите количество детей, которые будут с вами,
+                    возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <span class="calendar">
+                  <button class="change-people remove-people"></button>
+                  <input class="registration registration-people" type="number" name="" value="1" min="0">
+                  <button class="change-people add-people"></button>
+                </span>
+              </label>
             </div>
             <button class="button popup-button">
               Найти
             </button>
-            <!-- <p class="registration-note">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p></span> -->
           </form>
         </div>
-      </div>
-
-
-
-
-
-
+      </div> 
+      <!-- /wrap-popup -->
 
       <!-- mailing-index -->
       <section class="mailing-index mailing-index-bg">
@@ -257,7 +295,7 @@
               width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.6.2c1.8-.5 3.2.3 3.8 1.2l2.1-.7c0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6a3 3 0 0 1-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9a11 11 0 0 0 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" />
-              </svg></a></li>
+            </svg></a></li>
         <li class="footer-social-item"><a class="social-item-logo" href="https://www.facebook.com/htmlacademy/"><span
               class="visually-hidden">Фейсбук</span><svg class="navigation-icon" aria-hidden="true" focusable="false"
               width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +305,7 @@
               width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" />
-              </svg></a></li>
+            </svg></a></li>
       </ul>
       <!-- /footer-social -->
 
